@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    fieldset {
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      width: 50%;
+      margin: 0 auto;
+    }
+    legend {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Customer Information</legend>
+
+      <!-- First Name -->
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname"><br><br>
+
+      <!-- Last Name -->
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname"><br><br>
+
+      <!-- E-mail -->
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+    </fieldset>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="35"></textarea><br><br>
+
+    <!-- Submit and Reset Buttons -->
+    <input type="submit" value="Contact">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
